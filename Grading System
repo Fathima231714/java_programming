@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int mark1 = sc.nextInt();
+        int mark2 = sc.nextInt();
+        int mark3 = sc.nextInt();
+        int mark4 = sc.nextInt();
+        int mark5 = sc.nextInt();
+        int sum = (mark1+mark2+mark3+mark4+mark5);
+        float avg =(float) sum/5;
+        System.out.println("Name of the Student:"+name);
+        System.out.println("Total Mark:"+sum);
+        System.out.println("Average Mark:"+avg);
+        if(avg==100){
+            System.out.println("Grade Mark:S");
+        }
+        else if(avg >= 90 ){
+            System.out.println("Grade Mark:A");
+        }
+        else if(avg >= 80){
+            System.out.println("Grade Mark:B");
+        }
+        else if(avg >= 70){
+            System.out.println("Grade Mark:C");
+        }
+        else if(avg >= 60){
+            System.out.println("Grade Mark:D");
+        }
+        else if(avg >= 50){
+            System.out.println("Grade Mark:E");
+        }
+        else {
+            System.out.println("Grade Mark:Fail");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
